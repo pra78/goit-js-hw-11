@@ -1,0 +1,53 @@
+.form-section {
+    background-color: #4a69bd;
+}
+
+.form-container {
+    position: relative;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-form {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.input-box {
+    width: 100%;
+    padding: 10px 45px 10px 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-box:focus {
+    border: 1px solid dodgerblue;
+}
+
+.left-pointing-magnifying-glass {
+    position: absolute;
+    right: 0px;
+    bottom: 8px;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    background: #4a69bd22;
+    border: none;
+    outline: none;
+    line-height: 0;
+}
+
+.left-pointing-magnifying-glass:hover,
+.left-pointing-magnifying-glass:focus {
+    cursor: pointer;
+}
+
+.left-pointing-magnifying-glass img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
