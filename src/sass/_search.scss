@@ -1,5 +1,21 @@
 .form-section {
     background-color: #4a69bd;
+    display: flex;
+    align-items: center;
+}
+
+.logo-svg {
+    position: absolute;
+    display: inline-block;
+    // float: left;
+    margin-right: 40px;
+    margin-left: 40px;
+    z-index: 9999;
+}
+
+.js-hidden {
+    visibility: hidden;
+    opacity: 0;
 }
 
 .form-container {
