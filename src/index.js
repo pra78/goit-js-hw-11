@@ -1,11 +1,11 @@
 import { Notify } from "notiflix";
-import { createMarkup } from "./js/markup";
 import { fetchImages } from "./js/request";
+import templateFunction from './template/template.hbs';
 
+const galleryEl = document.querySelector('.gallery');
 const form = document.querySelector('#search-form');
 
 form.addEventListener('submit', onSubmitBtnPressed);
-
 
 function onSubmitBtnPressed(event) {
     event.preventDefault();
@@ -16,8 +16,7 @@ function onSubmitBtnPressed(event) {
                 const error = "Sorry, there are no images matching your search query. Please try again."
                 throw error;
             }
-            // console.log(result.hits[0].webformatURL);
-            createMarkup(result);
+            galleryEl.innerHTML = templateFunction(result.hits);
         })
         .catch(error => {
             console.log(error);
