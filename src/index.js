@@ -106,7 +106,6 @@ function handleInfiniteScroll() {
 };
 
 function removeInfiniteScroll() {
-//   loader.remove();
   window.removeEventListener("scroll", throttledInfiniteScroll);
 };
 
