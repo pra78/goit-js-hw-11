@@ -49,10 +49,6 @@ function onSubmitBtnPressed(event) {
             renderLoader();
             lightbox.refresh();
             // ============== SMOOTH SCROLL ===================
-            document
-                .querySelector(".gallery")
-                .firstElementChild.getBoundingClientRect();
-
             window.scroll({
                 top: 0,
                 behavior: "smooth",
@@ -111,7 +107,7 @@ function handleInfiniteScroll() {
 
 function removeInfiniteScroll() {
 //   loader.remove();
-    window.removeEventListener("scroll", throttledInfiniteScroll);
+  window.removeEventListener("scroll", throttledInfiniteScroll);
 };
 
 function renderLoader() {
