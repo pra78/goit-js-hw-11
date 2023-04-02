@@ -27,7 +27,6 @@
 :root {
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --animation-duration: 250ms;
-  overflow-x: hidden;
 }
 
 .form-section {
@@ -183,7 +182,7 @@
 
 @keyframes load {
   100% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
 }
 @media screen and (prefers-reduced-motion: reduce) {
