@@ -27,6 +27,7 @@
 :root {
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --animation-duration: 250ms;
+  overflow-x: hidden;
 }
 
 .form-section {
@@ -139,19 +140,6 @@
 
 .info-item {
   margin: 0;
-}
-
-.load-more {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #4a69bd;
-  color: white;
-  text-transform: uppercase;
-  padding: 15px 25px;
-  border-radius: 5px;
-  outline: none;
-  border: none;
 }
 
 .card-actions {
